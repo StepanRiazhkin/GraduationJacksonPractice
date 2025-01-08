@@ -200,9 +200,9 @@ public class ApiStepDefinitions {
 
     @Then("I should see my {string} in the response body")
     public void i_should_see_my_in_the_response_body(String info) {
-        String actualEmail = js.getString(info);
-        String expectedEmail = (String) parameters.get("email");
-        assertEquals(actualEmail, expectedEmail);
+        String actualInfo = js.getString(info);
+        String expectedInfo = (String) parameters.get(info);
+        assertEquals(actualInfo, expectedInfo);
     }
 
     /**
