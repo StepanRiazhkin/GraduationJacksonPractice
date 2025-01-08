@@ -33,8 +33,6 @@ public class BooksPage extends BasePage {
             By expectedName = By.xpath("//table/tbody/tr[1]/td[3]");
             wait.until(ExpectedConditions.visibilityOfElementLocated(headerLocator));
             wait.until(ExpectedConditions.visibilityOfElementLocated(cellLocator));
-
-            // Wait until the cell contains the desired text
             wait.until(ExpectedConditions.textToBePresentInElementLocated(expectedName, bookName));
 
             // Retrieve the header and cell values
