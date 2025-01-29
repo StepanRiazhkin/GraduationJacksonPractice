@@ -74,7 +74,6 @@ public class ApiUtil {
 
         for (String each : data) {
 
-
             Object value = thenPart.extract().path(each);
 
             System.out.println("value of the body = " + value);
