@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
         features = "src/test/resources/features",
         glue = "com/crm/step_definitions",
@@ -20,7 +21,4 @@ import org.junit.runner.RunWith;
 
 )
 
-public class CukeRunner {
-
-
-}
+public class CukeRunner {}
