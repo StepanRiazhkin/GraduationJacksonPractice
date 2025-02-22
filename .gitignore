@@ -12,7 +12,9 @@ target/
 *.iml
 *.ipr
 allure-results
-target
+target/
+!target/cucumber-reports/
+!target/allure-results/
 
 ### Eclipse ###
 .apt_generated
